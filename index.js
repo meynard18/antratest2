@@ -28,17 +28,15 @@ const displayData = (movies) => {
    const slides = Array.from(cardContainerEl.children);
    const slideWidth = slides[0].getBoundingClientRect().width;
 
-
-   ///////  SCROLL RIGHT //////////
    btnRight.addEventListener('click', () => {
       cardContainerEl.scrollLeft += slideWidth * 4;
       btnLeft.classList.add('displayLeft');
+      console.log(slideWidth);
    });
-
-   /////// SCROLL LEFT ///////////////
    btnLeft.addEventListener('click', () => {
       cardContainerEl.scrollLeft -= slideWidth * 4;
-      if (cardContainerEl.scrollLeft < 1040) {
+      console.log(cardContainerEl.scrollLeft);
+      if (cardContainerEl.scrollLeft < 800) {
          btnLeft.classList.remove('displayLeft');
       }
    });

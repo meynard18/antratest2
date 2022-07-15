@@ -25,7 +25,7 @@ button {
 }
 
 .cardContainer {
-   width: 100%;
+   width: 48rem;
    display: flex;
    justify-content: flex-start;
    background-color: green;
@@ -36,7 +36,9 @@ button {
 
 .cards {
    min-width: 12rem;
-   margin: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
 }
 
 .image {
@@ -51,7 +53,7 @@ button {
 }
 
 .movieInfo {
-   font-size: 0.575rem;
+   font-size: 0.475rem;
    width: 100;
    color: white;
 }
